@@ -46,4 +46,10 @@ export const Container = styled.div`
         cursor: pointer;
         margin-top: 20px;
     }
+    .backButton{
+        font-size:
+        text-decoration: none;
+        padding: 20px 40px;
+        color: #B8D8D4;
+    }
 `
