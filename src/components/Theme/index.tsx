@@ -3,6 +3,7 @@ import { ReactNode } from 'react'
 import { Header } from '../Header'
 import { SidebarItem } from '../SidebarItem'
 import { useForm } from '../../contexts/FormContext'
+import { ConfirmArea } from '../../pages/ConfirmArea'
 
 type Props ={
     children: ReactNode;
@@ -38,7 +39,7 @@ export const Theme = ({children}: Props) =>{
                         path="/step3"    
                         active={state.currentStep === 3}
                     />
-
+                    <ConfirmArea />
                 </C.Sidebar>
                 <C.Page>
                     {children}

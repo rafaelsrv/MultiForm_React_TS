@@ -12,6 +12,7 @@ function App (){
                 <Route path="/" element={<FormStep1/>} />
                 <Route path="/step2" element={<FormStep2/>} />
                 <Route path="/step3" element={<FormStep3/>} />
+                
             </Routes>    
         </BrowserRouter>
         </FormProvider>

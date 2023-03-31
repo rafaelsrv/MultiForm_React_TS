@@ -2,28 +2,36 @@ import { useNavigate, Link } from 'react-router-dom'
 import * as C from './styles'
 import { useForm, FormActions } from '../../contexts/FormContext'
 import { Theme } from '../../components/Theme'
-import { ChangeEvent, useEffect } from 'react'
+import { ChangeEvent, useEffect, useState } from 'react'
 
-
+let controle : number = 0
 export const FormStep3 = ()=>{
     const navigate = useNavigate();
     const { state, dispatch} = useForm();
+    const [confirm, setConfirm] = useState(false)
+    
+
+    
 
     useEffect(()=>{
+        if(confirm == true){
+            controle = 4
+        }else controle = 3
         if(state.name === ''){
             navigate('/')
         } else{
         dispatch({
             type: FormActions.setCurrentStep,
-            payload: 3
-
+            payload: controle
+            
         });
         }
-    }, []);
+    }, [confirm]);
 
     const handleNextStep = () =>{
         if(state.email !== '' && state.github !== ''){
-            console.log(state)
+            setConfirm(true)
+           
         }
         
     }
