@@ -60,10 +60,10 @@ export const FormStep3 = ()=>{
                 </label>
 
                 <label>
-                    Qual seu e-mail?
+                    Qual seu GitHub?
                     
                     <input 
-                        type="email"
+                        type="url"
                         value={state.github}
                         onChange={handleGitHubChange} >
                     </input>
