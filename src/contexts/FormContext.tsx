@@ -53,7 +53,7 @@ const formReducer = (state: State, action: Action) => {
         case FormActions.setEmail:
             return {...state, email: action.payload};
         case FormActions.setGithub:
-            return {...state, email: action.payload};
+            return {...state, github: action.payload};
         default:
             return state;
     }
