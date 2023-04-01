@@ -8,12 +8,12 @@ export const ConfirmArea = () =>{
         const { state } = useForm();
         console.log(state.currentStep)
 
-
+    //condicionais parar renderizar o level
     return(
         <>
         {state.currentStep === 4 ?
         <C.Container>
-        <hr/>
+        <hr />
         <p>Confirmação de dados</p>
         <label>Seu nome:</label>
         <h1>{state.name}</h1>
@@ -22,7 +22,7 @@ export const ConfirmArea = () =>{
         <label>Seu GitHub:</label>
         <h1>{state.github}</h1>
         <label>Seu nível de experiência:</label>
-        <h1>{state.level ? 'Experiente' : 'Iniciante'}</h1>
+        <h1>{state.level ? 'Experiente' : 'Iniciante'}</h1> 
          
         </C.Container>
         : <div></div>}
