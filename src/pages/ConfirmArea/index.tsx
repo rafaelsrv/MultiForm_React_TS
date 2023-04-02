@@ -8,7 +8,7 @@ export const ConfirmArea = () =>{
         const { state } = useForm();
         console.log(state.currentStep)
 
-    //condicionais parar renderizar o level
+    //condicionais parar renderizar o level//
     return(
         <>
         {state.currentStep === 4 ?
