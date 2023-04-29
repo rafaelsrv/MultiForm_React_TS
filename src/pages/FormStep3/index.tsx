@@ -46,7 +46,7 @@ export const FormStep3 = ()=>{
     const handleGitHubChange = (e: ChangeEvent<HTMLInputElement>) => {
         dispatch({
             type: FormActions.setGithub,
-            payload: e.target.value
+            payload: e.target.value // Set Payload Context.
         });
     }
 
@@ -59,7 +59,7 @@ export const FormStep3 = ()=>{
                 <hr/>
 
                 <label>
-                    Qual seu e-mail??
+                    Qual seu e-mail?? 
                     <input
                         type="email"
                         value={state.email}
