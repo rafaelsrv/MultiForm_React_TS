@@ -46,7 +46,7 @@ export const FormStep3 = ()=>{
     const handleGitHubChange = (e: ChangeEvent<HTMLInputElement>) => {
         dispatch({
             type: FormActions.setGithub,
-            payload: e.target.value // S!et Payload Context! SuperCommit!lll
+            payload: e.target.value // S!et Payload Context! SuperCommit!llll
         });
     }
 
